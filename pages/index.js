@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import TableDataAPI from './components/TableDataAPI'
+import InputFlipText from './components/InputFlipText'
 
 export default function Home() {
   return (
@@ -15,8 +16,9 @@ export default function Home() {
         
 
         <TableDataAPI></TableDataAPI>
-
-
+        <br></br>
+        <br></br>
+        <InputFlipText></InputFlipText>
 
       </main>
     </>

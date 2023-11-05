@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const TableDataAPI = () => {
 
-    const [dataAPI, setDataAPI] = useState({})
+    const [dataAPI, setDataAPI] = useState([])
 
     useEffect( () =>  {
       const url = `https://pokeapi.co/api/v2/pokemon?offset=20&limit=20`;
@@ -14,10 +14,10 @@ const TableDataAPI = () => {
     }, [])
 
 
+    console.log(dataAPI)
     const dataNamePokemonURL = dataAPI.map((actualElem)=>{
         return(
             <>
-            
             <tr>
                 <td>{actualElem.name}</td>
                 <td>{actualElem.url}</td>
@@ -39,7 +39,6 @@ const TableDataAPI = () => {
 
         <tbody>
             {dataNamePokemonURL}
-       
         </tbody>
     </table>
     </>
