@@ -1,14 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const DeleteLastWord = () => {
 
+    const [inputText, setinputText] = useState([])
 
+    const deleteLastWord = ()=>{
+       setinputText(inputText.slice(0, -1)) 
+    }
   return (
     <>
     <div>DeleteLastWord</div>
-    <input onChange={(e)=>{console.log(e.target.value)}}></input>
+    <input onChange={(e)=>{setinputText(e.target.value)}}></input>
     <br></br>
-    <button>Borra la última palabra</button>
+    <button onClick={()=>{deleteLastWord()}}>Borra la última palabra</button>
+    {inputText}
     </>
   )
 }
