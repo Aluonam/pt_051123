@@ -9,9 +9,22 @@ const TableDataAPI = () => {
       const url = `https://pokeapi.co/api/v2/pokemon?offset=20&limit=20`;
 
       axios.get(url)
-      .then(response => console.log(response.data.results))
+      .then(response => setDataAPI(response.data.results))
       .catch(error => console.log("error detected", error))
     }, [])
+
+
+    const dataNamePokemonURL = dataAPI.map((actualElem)=>{
+        return(
+            <>
+            
+            <tr>
+                <td>{actualElem.name}</td>
+                <td>{actualElem.url}</td>
+            </tr>
+            </>
+        )
+    })
     
   return (
     <>
@@ -19,16 +32,13 @@ const TableDataAPI = () => {
     <table>
         <thead>
             <tr>
-                <td>1</td>
-                <td>2</td>
+                <td> Nombre pokemon </td>
+                <td> URL para más </td>
             </tr>
         </thead>
-        
+
         <tbody>
-        <tr>
-                <td>1</td>
-                <td>2</td>
-            </tr>
+            {dataNamePokemonURL}
        
         </tbody>
     </table>
