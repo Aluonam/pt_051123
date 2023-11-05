@@ -2,7 +2,13 @@ import React from 'react'
 
 const InputFlipText = () => {
   return (
-    <div>InputFlipText</div>
+    <>
+    <input></input>
+    <br></br>
+    <button>Voltea texto</button>
+    
+    </>
+    
   )
 }
 

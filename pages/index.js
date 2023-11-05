@@ -16,7 +16,8 @@ export default function Home() {
         
 
         <TableDataAPI></TableDataAPI>
-
+        <br></br>
+        <br></br>
         <InputFlipText></InputFlipText>
 
       </main>
