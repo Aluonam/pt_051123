@@ -7,7 +7,7 @@ Tarea principal
 Consume una API y muestra los datos (todos o como minimo 4 columnas) en una tabla
 
 
-API URL: https://pokeapi.co/
+API URL: https://pokeapi.co/ --> https://pokeapi.co/api/v2/pokemon?offset=20&limit=20
 
 
 Tareas secundarias
