@@ -6,7 +6,7 @@ const InputFlipText = () => {
     const [dataInputText, setdataInputText] = useState("")
 
     const turnUpText = ()=>{
-        const arrText = dataInputText.split("")
+        const arrText = dataInputText.split("").reverse()
         console.log(arrText)
     }
 
