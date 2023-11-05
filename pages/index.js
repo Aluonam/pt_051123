@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import TableDataAPI from './components/TableDataAPI'
 import InputFlipText from './components/InputFlipText'
+import DeleteLastWord from './components/DeleteLastWord'
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
         <br></br>
         <br></br>
         <InputFlipText></InputFlipText>
+        <br></br>
+        <br></br>
+        <DeleteLastWord></DeleteLastWord>
 
       </main>
     </>
