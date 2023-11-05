@@ -4,17 +4,19 @@ const InputFlipText = () => {
 
 
     const [dataInputText, setdataInputText] = useState("")
-    
 
+    const turnUpText = ()=>{
+        const arrText = dataInputText.split("")
+        console.log(arrText)
+    }
 
 
   return (
     <>
-
     <input onChange={(e)=>setdataInputText(e.target.value)}></input>
     <br></br>
-    <button onClick={()=>{}}>Voltea texto</button>
-    {dataInputText}
+    <button onClick={()=>{turnUpText()}}>Voltea texto</button>
+
     </>
     
   )
