@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const InputFlipText = () => {
+
+
+    const [dataInputText, setdataInputText] = useState("")
+    
+
+
+
   return (
     <>
-    <input></input>
+
+    <input onChange={(e)=>setdataInputText(e.target.value)}></input>
     <br></br>
-    <button>Voltea texto</button>
-    
+    <button onClick={()=>{}}>Voltea texto</button>
+    {dataInputText}
     </>
     
   )
