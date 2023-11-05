@@ -5,9 +5,9 @@ const DeleteLastWord = () => {
     const [inputText, setinputText] = useState([])
 
     const deleteLastWord = ()=>{
-        const arrText = inputText.split(" ")
-        arrText.length = arrText.length - 1
-        setinputText(arrText.join(" ")) 
+        const newInputText = structuredClone(inputText).split(" ")
+        newInputText.pop()
+        setinputText(newInputText.join(" "))
     }
   return (
     <>
